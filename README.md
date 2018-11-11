@@ -1,6 +1,7 @@
 # go_base2base
 
 [基础书](https://go.fdos.me/down/book.pdf)
+[基础教程](https://github.com/Unknwon/the-way-to-go_ZH_CN)
 
 go的使用，数据类型，语法等
 
