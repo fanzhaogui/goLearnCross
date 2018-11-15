@@ -6,6 +6,10 @@ import (
 	"imooclearn/show2"
 )
 
+func init()  {
+	fmt.Println("main init")
+}
+
 func main() {
 	fmt.Println("Hello world")
 	show2.Show2()
