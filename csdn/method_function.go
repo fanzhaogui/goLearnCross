@@ -28,7 +28,7 @@ function is a global function belongs to package
 
  */
 
- // method 继承
+// method 继承 如下
 type Human struct {
 	name string
 	age int
@@ -50,6 +50,11 @@ func (h *Human) SayHi () {
 	fmt.Printf("my name's %s ,you can call %s \n", h.name, h.phone)
 }
 
+// method 重写 -- method_function2
+func (e *Employee) SayHi() {
+	fmt.Printf("Hi, I am %s, I work at %s, Call me on %s\n", e.name,
+	e.company, e.phone)// split
+}
 
 func main()  {
 	m := &Mutatable{0,0}
@@ -61,5 +66,8 @@ func main()  {
 	fmt.Println(m) // value changed
 
 	mark := Student{Human{"David", 23 ,"13655554444"}, "MIT"}
+	sam := Employee{Human{"Messi", 33, "13722223333"},"Xueba"}
 
+	mark.SayHi()
+	sam.SayHi()
 }
